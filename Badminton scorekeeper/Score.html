@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Score.css">
+    <title>Badminton Scorekeeper</title>
+</head>
+
+<body>
+    <section id="main1">
+        <span id="image">
+        <img src="Badminton image.jpg">
+        </span>
+        <div id="heading">
+            <b>Badminton Score Keeper</b>
+        </div>
+        <div id="scoreBoard">
+            <h1><span id='Player1'>0</span> to
+                <span id='Player2'>0</span></h1>
+            <p>Use the buttons below to keep score.</p>
+            <div id="playingTo">
+                <b>Playing To</b>
+                <select name="pointSelection" id="ptChoice">
+                    <option value='init'></option>
+                    <option>3</option>
+                    <option>5</option>
+                    <option>7</option>
+                    <option>9</option>
+                    <option>11</option>
+                    <option>13</option>
+                    <option>15</option>
+                    <option>17</option>
+                    <option>19</option>
+                    <option>21</option>
+                </select>
+            </div>
+        </div>
+        <div id="scoreControl">
+            <button id="button1">+1 Player One</button>
+            <button id="button2">+1 Player Two</button>
+            <button id="button3">Reset</button>
+        </div>
+    </section>
+    <script src="Score.js"></script>
+</body>
+
+</html>

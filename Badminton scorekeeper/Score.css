@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+#main1 {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+#playingTo {
+    margin: 15px 0 0 0;
+}
+
+#scoreBoard {
+    padding: 10px 0 15px 10px;
+}
+
+#heading {
+    padding: 5px 0 10px 10px;
+    font-size: 14.5px;
+}
+
+#scoreBoard,
+#heading {
+    box-sizing: border-box;
+    border: 2px solid rgb(240, 240, 240);
+}
+
+#scoreControl {
+    display: flex;
+}
+
+button {
+    flex-grow: 1;
+    width: 30%;
+    padding: 8px 0;
+    border: 0;
+    border-radius: 0.3em;
+    color: white;
+    margin-right: 1px;
+}
+
+#button1 {
+    background-color: #f1bb4e;
+}
+
+#button2 {
+    background-color: #4e9af1;
+}
+
+#button3 {
+    background-color: #f14e4e;
+    margin-right: 0;
+}
+
+#scoreBoard span {
+    margin: 10px 0 5px 0;
+    font-size: larger;
+    color: black;
+}
+
+#scoreBoard p {
+    padding: 5px 0 0 0;
+}

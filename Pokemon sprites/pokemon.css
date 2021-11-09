@@ -1,0 +1,14 @@
+.pokemon {
+    display: inline-block;
+    text-align: center;
+    margin: 0 5px 0 5px;
+}
+
+img{
+    display: block;
+}
+
+span {
+    display: block;
+    margin-bottom: 30px;
+}
