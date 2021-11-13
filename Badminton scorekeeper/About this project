@@ -1,0 +1,4 @@
+This project is an implementation  of Javascript with HTML and CSS.
+I have used events and DOM manipulation from Javascript. 
+Basic styles, Box model properties and Flexbox were also used from CSS.
+Using all of the stuff above, an implementation is created to keep track of badminton score of two players upto specified game point and also display the winner and runners up in a unique way.
