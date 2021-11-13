@@ -14,7 +14,7 @@ form.addEventListener('submit', async function(e) {
     form.elements.query.value = '';
 })
 
-//function to loop and append link of the show on tvmaze and the image inside of the show found for the specific query string
+//Function to loop and append link of the show on tvmaze and the image inside of the show found for the specific query string
 function addImages(result) {
     for (res of result) {
         if (res.show.image) {
@@ -28,6 +28,7 @@ function addImages(result) {
     }
 }
 
+//Function to remove images on every search
 function removeImages(images) {
     for (img of images) {
         img.remove();
