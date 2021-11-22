@@ -1,0 +1,18 @@
+{
+    "dependencies": {
+        "colors": "^1.4.0",
+        "esm": "^3.2.25",
+        "franc": "^6.0.0",
+        "langs": "^2.0.0"
+    },
+    "name": "language-detector",
+    "version": "1.0.0",
+    "description": "Detects language of a string passed.",
+    "main": "app.js",
+    "type": "module",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Kunj Manavadariya",
+    "license": "ISC"
+}
