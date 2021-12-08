@@ -1,3 +1,5 @@
+//Kindly copy/share with credit :)
+
 const express = require('express');
 const app = express();
 const path = require('path');
@@ -44,12 +46,6 @@ app.get('/comments/new', (req, res) => {
     res.render('comments/new');
 })
 
-app.post('/comments', (req, res) => {
-    const { username: name, comment } = req.body;
-    comments.push({ name, comment, id: uuid() });
-    res.redirect("/comments");
-})
-
 app.get('/comments/:id', (req, res) => {
     const { id } = req.params;
     const comment = comments.find(c => c.id === id);
@@ -60,6 +56,12 @@ app.get('/comments/:id/edit', (req, res) => {
     const { id } = req.params;
     const comment = comments.find(c => c.id === id);
     res.render('comments/edit', { comment });
+})
+
+app.post('/comments', (req, res) => {
+    const { username: name, comment } = req.body;
+    comments.push({ name, comment, id: uuid() });
+    res.redirect("/comments");
 })
 
 app.patch('/comments/:id', (req, res) => {
