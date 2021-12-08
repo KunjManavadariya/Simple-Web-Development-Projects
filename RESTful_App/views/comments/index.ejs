@@ -1,0 +1,22 @@
+<%- include('../partials/head') %>
+    <title>All comments</title>
+    </head>
+
+    <body>
+        <h1>Comments</h1>
+        <ul>
+            <%for(let comment of comments){%>
+                <li style="line-height: 2;">
+                    <%=comment.comment%> - <b><%=comment.name%></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="/comments/<%= comment.id %>">More..</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="/comments/<%=comment.id%>/edit">Edit</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <form style="display: inline;" method="POST" action="/comments/<%=comment.id%>?_method=DELETE">
+                            <button>Delete</button>
+                        </form>
+                </li>
+                <%}%>
+        </ul>
+        <a href="/comments/new">Make a new comment</a>
+    </body>
+
+    </html>
