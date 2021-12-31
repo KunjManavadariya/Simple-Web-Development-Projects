@@ -1,0 +1,26 @@
+{
+  "name": "products_crud-with-db",
+  "version": "1.0.0",
+  "description": "This app is a demonstration of CRUD operations with node, express and mongo database using a products app.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "CRUD",
+    "products",
+    "Mongo",
+    "Mongoose",
+    "Database",
+    "RESTful",
+    "routing"
+  ],
+  "author": "Kunj Manavadariya",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.1.4"
+  }
+}
