@@ -29,10 +29,10 @@ app.get('/products', async(req, res) => {
     const { category } = req.query;
     if (category) {
         const Products = await Product.find({ category });
-        res.render('products/index', { Products, category, back: 'yes' })
+        res.render('products/index', { Products, category, back: 'yes', head: 'yes' })
     } else {
         const Products = await Product.find({});
-        res.render('products/index', { Products, category: 'All', back: '' })
+        res.render('products/index', { Products, categories, back: '', head: '' })
     }
 })
 

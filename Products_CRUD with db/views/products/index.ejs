@@ -10,8 +10,13 @@
 
 <body>
     <h1>
-        <%=category%> Products
+        <%if(head){%>
+            <%=category%>
+                <% } else{ %>
+                    All
+                    <%}%> Products
     </h1>
+
     <ul>
         <% for (let product of Products) { %>
             <li>
@@ -25,8 +30,19 @@
     </ul>
     <a href="/products/new">Add a new product</a><br>
     <%if(back){%>
-        <a href="/products">Back to all products</a>
+        <a href="/products">Back to all products</a><br>
         <%}%>
+            <%if(!back){%>
+                <form action="/products?category=<%=Products.category%>" method="get">
+                    <label for="filter">Filter by category: </label>
+                    <select name="category" id="filter">
+    <%for(let category of categories){%>
+        <option value="<%=category%>"><%=category%></option>
+    <%}%>
+</select>
+                    <button>Search</button>
+                </form>
+                <%}%>
 </body>
 
 </html>
