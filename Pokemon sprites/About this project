@@ -1,0 +1,4 @@
+This project demonstrates the basics of javascript and DOM such as looping, creating and appending elements.
+In this appplication, images of pokemon are being displayed on the page with the help of looping from a specific source.
+
+PS: Source credit "https://raw.githubusercontent.com/PokeAPI"
