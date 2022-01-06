@@ -1,0 +1,3 @@
+This project demonstrates the complete usage of routing using REST and CRUD functionality.
+In this application, a simple non-styled interface is created to view, edit, add or delete comments and routing is created by REST. 
+As no database is connected, changes are only displayed until server restarts.
