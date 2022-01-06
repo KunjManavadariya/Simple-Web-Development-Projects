@@ -1,0 +1,2 @@
+This project demonstrates the basics of npm and importing and using different npm packages.
+This is only js side application which, on the basis of the data fed to the imported npm package, returns the language of the given string.
