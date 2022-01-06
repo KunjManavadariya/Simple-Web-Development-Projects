@@ -1,0 +1,3 @@
+This project demonstrates the full CRUD application of Javascript, Express, EJS, RESTful routes, MongoDB and Mongoose.
+In this application, a simple non-styled interface is created to display the available products in the database on the index page. From there, links are embedded for viewing specific product details, editing a particular product, creating new products and deleting them as well.
+All the changes in the application will be stagnant on server restart as well.
