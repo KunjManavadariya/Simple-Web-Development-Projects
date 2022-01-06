@@ -1,0 +1,2 @@
+This project demonstrates the use of event handling in javascript.
+In this application, a simple non-styled interface is designed which has a button to generate a random color with the help of math.random() function and that randomly generated color is set to the body background on button click event listener.
