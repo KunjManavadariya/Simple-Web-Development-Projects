@@ -1,0 +1,2 @@
+This project demonstrates the basics of APIs and getting data from APIs using Axios.
+In this application, API of tvmaze.com is used in order to get tv shows from the API end on submission of the search form. The tv show images get appended with the help of loop for the given query string.
